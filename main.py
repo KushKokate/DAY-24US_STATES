@@ -23,4 +23,5 @@ if answer_state in all_states:
     t.penup()
     state_data = data[answer_state == data.state]
     t.goto(int(state_data.x), int(state_data.y))
-    t.write(state_data.state)
+    t.write(state_data.state.item())
+screen.exitonclick()
